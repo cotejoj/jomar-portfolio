@@ -22,5 +22,14 @@ header {
 
 nav a {
     margin: 25px;
+    color: white;
+    text-decoration: none;
+}
+
+nav a:hover , nav a.active {
+    cursor: pointer;
+    text-decoration: underline;
+    text-decoration-color: gray;
+    text-decoration-thickness: 3px;
 }
 
