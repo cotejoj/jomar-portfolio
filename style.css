@@ -6,7 +6,7 @@ header {
     top:0;
     left: 0;
     padding: 10px 12%;
-    background-color: #1B1A55;
+    background-color: #070F2B;
     color: white;
 }
 
@@ -26,19 +26,66 @@ nav a {
     text-decoration: none;
 }
 
-nav a:hover , nav a.active {
+nav a:hover, nav a.active {
     cursor: pointer;
-    text-decoration: underline;
-    text-decoration-color: gray;
-    text-decoration-thickness: 3px;
+    position: relative; /* Ensure the link is positioned relatively for the pseudo-element */
+    text-decoration: none;
 }
+
+/* Create a custom underline */
+nav a:hover::after, nav a.active::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -2px; /* Adjust based on the thickness of the underline */
+    width: 100%;
+    height: 2px; /* Thickness of the underline */
+    background-color: gray; /* Color of the underline */
+}
+
 
 /* --- HERO --- */
 
-main {
+.hero-section {
     width: 100%;
     height: 100vh;
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
 }
+
+.left-hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+.left-hero .btn-box {
+    display: flex;
+    gap: 25px;
+}
+
+.left-hero .btn-box button{
+    background-color: #1B1A55;
+    font-weight: 600;
+    color: white;
+    padding:5px;
+    width: 100px;
+    border: none;
+    border-radius: 7px;
+}
+
+.right-hero img {
+    border-radius: 50%; /* Makes the image round */
+    width: 500px;       /* Ensure the image is square for a perfect circle */
+    height: 500px;      /* Ensure the image is square for a perfect circle */
+}
+
+
+/* --- About --- */
+
+.about-section {
+    width: 100%;
+    height:100vh;
+} 
