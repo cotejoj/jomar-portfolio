@@ -9,19 +9,51 @@
 </head>
 <body>
    <nav id="nav">
-     <div class ="nav-logo">
+     <div class="nav-logo">
         <h1>Jomar</h1>
      </div>
      <ul class="nav-list">
-        <li>Home</li>
-        <li>About</li>
-        <li>Projects</li>
-        <li>Contacts</li>
+        <li><a href="#hero">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
      </ul>
    </nav>
-   <section id="hero"></section>
-   <section id="about">About</section>
-   <section id="projects">Projects</section>
-   <section id="contact">Contact</section>
+
+   <section id="hero">
+      <div class="hero-content">
+          <p>Hi, my name is</p>
+          <h1>Jomar Cotejo.</h1>
+          <h1>I love learning new things.</h1>
+          <p class="hero-jobrole">I'm a System Support Technician specializing in software and programming, ensuring smooth operations through troubleshooting and optimization.</p>
+          <a href="#projects" class="cta-button">View My Work</a>
+      </div>
+     <!--- <div class="hero-right">
+        <img src="./assets/jomar-picture.jpg" alt="jomar picture" />
+           You can add an image or animation here
+      </div> ---->
+   </section>
+
+   <section id="about">
+       <h2>About</h2>
+       <p>Write a brief introduction about yourself here.</p>
+   </section>
+
+   <section id="projects">
+       <h2>Projects</h2>
+       <div class="projects-container">
+           <!-- Add project cards or details here -->
+       </div>
+   </section>
+
+   <section id="contact">
+       <h2>Contact</h2>
+       <form id="contact-form">
+           <input type="text" placeholder="Your Name" required>
+           <input type="email" placeholder="Your Email" required>
+           <textarea placeholder="Your Message" required></textarea>
+           <button type="submit">Send</button>
+       </form>
+   </section>
 </body>
 </html>
