@@ -43,57 +43,65 @@ body {
 
 /* Hero Section */
 #hero {
-    display: flex;
-    justify-content: space-between;
-    align-items:center ;
-    height: 100vh;
-    padding: 50px;
-    color: white;
-    width: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100vh;
+  padding: 50px;
+  color: white;
+  background-color: #121212; /* Optional dark background for contrast */
+  gap: 40px;
+  flex-wrap: wrap; /* Ensure it wraps on small screens */
 }
 
 .hero-content {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;    
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  max-width: 600px;
 }
 
 .hero-content h1 {
-    font-size: 60px;
-    margin-bottom: 15px;
+  font-size: 60px;
+  margin-bottom: 15px;
 }
 
-
+.hero-content h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+  color: #ccc;
+}
 
 .hero-content p {
-    font-size: 18px;
-    margin-bottom: 20px;
-
+  font-size: 18px;
+  margin-bottom: 20px;
+  line-height: 1.6;
 }
 
+/* CTA Button */
 .cta-button {
-    background-color: #007bff;
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 16px;
-    text-decoration: none;
-    display: inline-block;
+  background-color: #007bff;
+  color: white;
+  padding: 12px 24px;
+  border-radius: 6px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
 }
 
 .cta-button:hover {
-    background-color: #0056b3;
+  background-color: #0056b3;
 }
 
-.hero-right {
-    width: 50%;
-}
-
+/* Hero Image */
 .hero-right img {
-    border-radius: 50%;
+  max-width: 300px;
+  width: 100%;
+  border-radius: 16px;
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
+  object-fit: cover;
 }
+
+
 
 /* Sections */
 section {
