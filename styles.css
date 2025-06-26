@@ -39,6 +39,27 @@ body, p, ul, li {
     letter-spacing: 3px;
 }
 
+.logo-link {
+  text-decoration: none;
+  color: #ffffff;
+  display: inline-block;
+  transition: all 0.3s ease;
+}
+
+.logo-link h1 {
+  margin: 0;
+  font-size: 24px;
+  letter-spacing: 3px;
+}
+
+.logo-link:hover {
+  color: #ffffff;
+  text-shadow: 0 0 10px #00ffff, 0 0 20px #00e0ff;
+  transform: scale(1.05);
+  cursor: pointer;
+}
+
+
 .nav-list {
     list-style: none;
     display: flex;
@@ -144,7 +165,7 @@ body, p, ul, li {
     background-color: #61dafb;
     color: #121212;
     padding: 14px 32px;
-    border-radius: 10px;
+    border-radius: 1 0px;
     font-weight: 700;
     font-size: 18px;
     text-decoration: none;
