@@ -2,43 +2,66 @@ body {
     background-color: #1B1833;
     color: #333;
 }
+/* Nav & headings use Press Start 2P */
+.nav-logo h1,
+.nav-list a,
+h1, h2, h3 {
+  font-family: 'Press Start 2P', cursive;
+}
 
-/* Navigation Bar */
+/* Body text uses Orbitron */
+body, p, ul, li {
+  font-family: 'Orbitron', sans-serif;
+}
+
 #nav {
     position: fixed;
     top: 0;
     width: 100%;
-    background: rgba(0, 0, 0, 0.8);
+    background: rgba(0, 0, 0, 0.85);
     color: white;
-    padding: 15px 30px;
+    padding: 15px 40px;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between; /* logo left, links right */
     align-items: center;
     z-index: 1000;
+    font-family: 'Press Start 2P', cursive;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    box-sizing: border-box;
 }
 
 .nav-logo h1 {
-    font-size: 24px;
+    font-size: 18px;
+    font-weight: normal;
+    margin: 0;
+    cursor: default;
+    letter-spacing: 3px;
 }
 
 .nav-list {
     list-style: none;
     display: flex;
+    margin: 0;
+    padding: 0;
 }
 
 .nav-list li {
-    margin: 0 15px;
+    margin: 0 20px;
 }
 
 .nav-list a {
     text-decoration: none;
     color: white;
-    font-weight: bold;
+    font-weight: normal;
+    font-size: 12px;
     transition: color 0.3s ease;
+    letter-spacing: 2px;
 }
 
 .nav-list a:hover {
-    color: #007bff;
+    color: #00ffea;
+    text-shadow: 0 0 6px #00ffea;
 }
 
 /* Hero Section */
