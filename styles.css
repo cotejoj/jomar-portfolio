@@ -44,10 +44,12 @@ body, p, ul, li {
     display: flex;
     margin: 0;
     padding: 0;
+    gap: 20px; /* space between links and button */
+    align-items: center; /* vertical center nav items */
 }
 
 .nav-list li {
-    margin: 0 20px;
+    margin: 0; /* remove margin, gap is used */
 }
 
 .nav-list a {
@@ -57,12 +59,40 @@ body, p, ul, li {
     font-size: 12px;
     transition: color 0.3s ease;
     letter-spacing: 2px;
+    line-height: 1; /* reduce extra space */
 }
 
 .nav-list a:hover {
     color: #00ffea;
     text-shadow: 0 0 6px #00ffea;
 }
+
+.hire-me-button {
+  background: linear-gradient(45deg, #007bff, #00e0ff);
+  color: white;
+  padding: 10px 26px;
+  border-radius: 30px;
+  font-weight: bold;
+  text-transform: uppercase;
+  box-shadow: 0 0 10px #00e0ff, 0 0 20px #007bff;
+  transition: all 0.3s ease;
+  border: none;
+  cursor: pointer;
+  font-family: 'Orbitron', sans-serif;
+  font-size: 12px;
+  line-height: 1;
+  display: inline-flex; /* flex for vertical centering */
+  align-items: center;
+  justify-content: center;
+}
+
+.hire-me-button:hover {
+  background: linear-gradient(45deg, #00e0ff, #007bff);
+  box-shadow: 0 0 20px #00e0ff, 0 0 30px #007bff;
+  transform: scale(1.05);
+  text-decoration: none;
+}
+
 
 /* Hero Section */
 #hero {
