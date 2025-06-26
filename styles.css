@@ -374,6 +374,20 @@ body, p, ul, li {
   stroke: #ffffff;
 }
 
+#footer {
+  background-color: #121212;
+  color: #888;
+  text-align: center;
+  padding: 20px 10px;
+  font-family: 'Orbitron', sans-serif;
+  font-size: 14px;
+  user-select: none;
+}
+
+#footer p {
+  margin: 5px 0;
+}
+
 
 
 /* Responsive Design */
