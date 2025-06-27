@@ -17,7 +17,6 @@ body, p, ul, li {
 #nav {
     top: 0;
     width: 100%;
-    background: rgba(0, 0, 0, 0.85);
     color: white;
     padding: 15px 40px;
     display: flex;
@@ -186,7 +185,6 @@ body, p, ul, li {
     height: 100vh;
     padding: 60px 50px;
     color: white;
-    background: linear-gradient(135deg, #121212 0%, #1b1833 100%);
     gap: 40px;
     flex-wrap: wrap; /* Responsive wrapping */
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -228,7 +226,7 @@ body, p, ul, li {
     background-color: #61dafb;
     color: #121212;
     padding: 14px 32px;
-    border-radius: 1 0px;
+    border-radius: 1px;
     font-weight: 700;
     font-size: 18px;
     text-decoration: none;
