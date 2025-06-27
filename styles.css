@@ -262,7 +262,7 @@ body, p, ul, li {
 
 /* Hero Image */
 .hero-right img {
-    max-width: 320px;
+    max-width: 500px;
     width: 100%;
     border-radius: 20px;
     box-shadow: 0 20px 40px rgba(97, 218, 251, 0.4);
