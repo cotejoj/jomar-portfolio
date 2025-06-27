@@ -15,7 +15,6 @@ body, p, ul, li {
 }
 
 #nav {
-    position: fixed;
     top: 0;
     width: 100%;
     background: rgba(0, 0, 0, 0.85);
@@ -38,6 +37,49 @@ body, p, ul, li {
     cursor: default;
     letter-spacing: 3px;
 }
+
+/* Burger hidden by default */
+.nav-toggle {
+  display: none;
+}
+
+/* Show burger and hide nav list on mobile */
+@media (max-width: 768px) {
+  .nav-toggle {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+
+  .burger {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    border-radius: 2px;
+    transition: 0.3s ease;
+  }
+
+  .nav-list {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.95);
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    padding: 20px 0;
+    z-index: 999;
+  }
+
+  .nav-list.show {
+    display: flex;
+  }
+}
+
 
 .logo-link {
   text-decoration: none;
@@ -65,10 +107,31 @@ body, p, ul, li {
     display: flex;
     margin: 0;
     padding: 0;
-    gap: 20px; /* space between links and button */
-    align-items: center; /* vertical center nav items */
+    gap: 20px;
+    align-items: center;
 }
 
+/* Mobile First: Hide by default on small screens */
+@media (max-width: 768px) {
+  .nav-list {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.95);
+    position: absolute;
+    top: 70px;
+    left: 0;
+    width: 100%;
+    padding: 20px 0;
+    z-index: 999;
+  }
+
+  .nav-list.show {
+    display: flex;
+  }
+
+
+}
 .nav-list li {
     margin: 0; /* remove margin, gap is used */
 }
@@ -118,7 +181,7 @@ body, p, ul, li {
 /* Hero Section */
 #hero {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     height: 100vh;
     padding: 60px 50px;
@@ -290,6 +353,10 @@ body, p, ul, li {
     #about p {
         font-size: 18px;
     }
+    
+    .cta-button {
+        align-self: center;
+    }
 }
 
 /* Skills and Experience Section */
@@ -458,29 +525,3 @@ body, p, ul, li {
 }
 
 
-
-/* Responsive Design */
-@media (max-width: 768px) {
-    #hero {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .hero-content {
-        margin-bottom: 20px;
-        align-items: center;
-    }
-
-    .nav-list {
-        flex-direction: column;
-    }
-
-    .nav-list li {
-        margin: 10px 0;
-    }
-
-    #skills-experience ul {
-        padding-left: 20px;
-        max-width: 100%;
-    }
-}
